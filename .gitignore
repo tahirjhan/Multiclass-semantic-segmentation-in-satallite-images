@@ -1,0 +1,8 @@
+.idea
+__pycache__
+*.h5
+/dataset
+/log/*
+!/log/README.md
+/F_0.9407/*
+/F_0.9528/*
