@@ -79,6 +79,17 @@ if __name__ == '__main__':
     # model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=metrics)
     model.summary()
 
+    history1 = model.fit(X_train, y_train,
+                         batch_size=8,
+                         verbose=1,
+                         epochs=20,
+                         validation_data=(X_test, y_test),
+                         shuffle=True,
+                         callbacks=callback_list)
+    model.save('Trained_models/trained_model.hdf5')
+
+
+
 
 
 
